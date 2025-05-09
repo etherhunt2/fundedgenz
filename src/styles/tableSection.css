@@ -1,0 +1,209 @@
+.introduction-section {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+}
+
+.introduction-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.introduction-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Pricing Section Styles */
+.pricing-section {
+  margin-top: 80px;
+}
+
+.pricing-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-color: #ca8383;
+  border-radius: 8px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px 10px;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.steps-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pricing-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pricing-button {
+  padding: 12px 25px;
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pricing-button:hover {
+  background-color: #addf3a;
+}
+
+.pricing-button.active {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+
+@media (max-width: 767px) {
+  .introduction-section {
+    padding: 40px 0;
+  }
+  
+  .introduction-header {
+    margin-bottom: 40px;
+  }
+  
+  .introduction-header h2 {
+    font-size: 24px;
+  }
+  
+  .intro-box {
+    padding: 20px;
+  }
+  
+  .intro-mission-container {
+    padding: 20px;
+  }
+  
+  .pricing-table-row {
+    flex-direction: column;
+  }
+  
+  .pricing-table-row.header {
+    display: none;
+  }
+  
+  .pricing-cell {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    text-align: right;
+    position: relative;
+  }
+  
+  .pricing-cell:before {
+    content: attr(data-label);
+    font-weight: 600;
+    position: absolute;
+    left: 20px;
+    display: block;
+  }
+  
+  .pricing-cell.feature {
+    text-align: left;
+    font-weight: 600;
+    background-color: #f5f5f5;
+  }
+}
+
+/* Funding Section Styles */
+.funding-container {
+  font-family: 'Arial', sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.funding-header {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.funding-amount {
+  margin-bottom: 8px;
+  color: #333;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.funding-amount-text {
+  font-size: 24px;
+}
+
+.funding-amount-value {
+  font-size: 44px;
+  font-weight: 500;
+  color: #8a8106;
+}
+
+.funding-button {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #01c50b;
+  color: rgb(2, 1, 1);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.funding-button:hover {
+  background-color: #1ecc27;
+  color: rgb(2, 1, 1);
+}
+
+.funding-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.funding-table th, .funding-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.funding-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+
+.funding-table tr:last-child td {
+  border-bottom: none;
+}
+
+.funding-table tr:hover {
+  background-color: #daee81;
+}
+
+.funding-table td:nth-child(2),
+.funding-table td:nth-child(3) {
+  text-align: center;
+}
+
+.funding-table td:nth-child(3) {
+  font-weight: 500;
+  color: #4a6bff;
+}

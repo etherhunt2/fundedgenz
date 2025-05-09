@@ -1,0 +1,128 @@
+/* Importing component stylesheets */
+@import './preloader.css';
+@import './header.css';
+@import './hero.css';
+@import './brands.css';
+@import './features.css';
+@import './tableSection.css';
+@import './roadmap.css';
+@import './invest.css';
+@import './team.css';
+@import './partners.css';
+@import './events.css';
+@import './faq.css';
+@import './footer.css';
+
+/* Base styles */
+:root {
+  --tg-primary-color: #df86aa;
+  --unit-primary-color: #df86aa;
+  --tg-theme-color2: #5729D6;
+  --tg-secondary-color: #0F101E;
+  --unit-secondary-color: #0F101E;
+  --tg-green: #010314;
+  --tg-black: #010314;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn2 {
+  background-color: var(--tg-primary-color);
+  color: white;
+}
+
+.btn3 {
+  border: 1px solid var(--tg-primary-color);
+  color: var(--tg-primary-color);
+  background-color: transparent;
+}
+
+.btn4 {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.main-area {
+  min-height: 100vh;
+  position: relative;
+}
+
+.show-arrow::after {
+  content: "→";
+  margin-left: 5px;
+}
+
+/* Scroll Top Button */
+.scroll-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--tg-primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  z-index: 99;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.scroll-top:hover {
+  opacity: 1;
+}
+
+.scroll-top i {
+  line-height: 40px;
+}
+
+/* Other base styles as needed */ 
