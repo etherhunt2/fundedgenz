@@ -186,7 +186,7 @@ const Signup = () => {
                             checked={formData.agreeTerms}
                             onChange={handleChange}
                         />
-                        <label htmlFor="agreeTerms">I agree to the <a href="/terms">Terms and Conditions</a></label>
+                        <label htmlFor="agreeTerms">I agree to the <a href="privacy.pdf" download>Terms and Conditions</a></label>
                         {errors.agreeTerms && <span className="error-message">{errors.agreeTerms}</span>}
                     </div>
 

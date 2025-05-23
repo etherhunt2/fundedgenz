@@ -49,8 +49,8 @@ const Footer = () => {
                                 <li><a href="https://api.whatsapp.com/send?phone=919175388622">Customer Support</a></li>
                                 <li><a href="https://api.whatsapp.com/send?phone=919175388622">Live Chat</a></li>
                                 <li><a href="https://api.whatsapp.com/send?phone=919175388622">Call Us</a></li>
-                                <li><a href='#'>Terms & Condition</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="/privacy.pdf" download>Terms & Condition</a></li>
+                                <li><a href="/privacy.pdf" download>Privacy Policy</a></li>
                             </ul>
                         </div>
 
