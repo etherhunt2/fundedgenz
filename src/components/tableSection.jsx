@@ -9,7 +9,7 @@ const TableSection = () => {
     };
 
     return (
-        <section className="introduction-section">
+        <section className="introduction-section" id='plan'>
             <div className="container">
                 <div className="introduction-header">
                     <h2>Choose Your Funding Plan</h2>
@@ -31,10 +31,10 @@ const TableSection = () => {
                                 Step 2
                             </button>
                             <button
-                                className={`pricing-button ${activeButton === 2 ? 'active' : ''}`}
-                                onClick={() => handleButtonClick(2)}
+                                className={`pricing-button active`}
+                            // onClick={() => handleButtonClick(2)}
                             >
-                                Instatnt
+                                Instant
                             </button>
                         </div>
                     </div>
@@ -42,8 +42,8 @@ const TableSection = () => {
                     <div className="pricing-buttons-container" style={{ marginTop: '20px', marginBottom: '20px' }}>
                         <div className="pricing-buttons">
                             <button
-                                className={`pricing-button ${activeButton === 3 ? 'active' : ''}`}
-                                onClick={() => handleButtonClick(3)}
+                                className={`pricing-button active`}
+                            // onClick={() => handleButtonClick(3)}
                             >
                                 $5,000
                             </button>

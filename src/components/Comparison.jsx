@@ -4,7 +4,7 @@ import '../styles/tableSection.css';
 const Comparison = () => {
 
     return (
-        <section className="introduction-section">
+        <section className="introduction-section" id='compare'>
             <div className="container">
                 <div className="introduction-header">
                     <h2>Real Account Vs Funded Account</h2>

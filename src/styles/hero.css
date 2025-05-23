@@ -2,6 +2,7 @@
 .hero-section {
   position: relative;
   padding: 200px 0 100px;
+  min-height: 100vh;
   background-color: var(--tg-secondary-color);
   overflow: hidden;
   color: #fff;
@@ -109,6 +110,19 @@
 .hero-buttons {
   display: flex;
   gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    margin-top: 50px;
+    margin-inline: 50px;
+  }
+
+  .hero-content h2 {
+    font-size: 36px;
+    margin-inline: 50px;
+  }
 }
 
 .hero-image {

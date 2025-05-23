@@ -44,6 +44,25 @@
   gap: 20px;
 }
 
+@media (max-width: 767px) {
+  .pricing-buttons {
+    overflow-x: auto;
+    padding-left: 400px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .pricing-buttons::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .pricing-button {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+}
+
 .pricing-button {
   padding: 12px 25px;
   background-color: #fff;
@@ -61,47 +80,47 @@
 }
 
 .pricing-button.active {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
-  border-color: #4CAF50;
+  border-color: #4caf50;
 }
 
 @media (max-width: 767px) {
   .introduction-section {
     padding: 40px 0;
   }
-  
+
   .introduction-header {
     margin-bottom: 40px;
   }
-  
+
   .introduction-header h2 {
     font-size: 24px;
   }
-  
+
   .intro-box {
     padding: 20px;
   }
-  
+
   .intro-mission-container {
     padding: 20px;
   }
-  
+
   .pricing-table-row {
     flex-direction: column;
   }
-  
+
   .pricing-table-row.header {
     display: none;
   }
-  
+
   .pricing-cell {
     border-right: none;
     border-bottom: 1px solid #eee;
     text-align: right;
     position: relative;
   }
-  
+
   .pricing-cell:before {
     content: attr(data-label);
     font-weight: 600;
@@ -109,7 +128,7 @@
     left: 20px;
     display: block;
   }
-  
+
   .pricing-cell.feature {
     text-align: left;
     font-weight: 600;
@@ -119,7 +138,7 @@
 
 /* Funding Section Styles */
 .funding-container {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   max-width: 700px;
   margin: 0 auto;
   border-radius: 8px;
@@ -173,12 +192,32 @@
   color: rgb(2, 1, 1);
 }
 
+@media (max-width: 767px) {
+  .funding-amount {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0;
+  }
+
+  .funding-amount-text {
+    font-size: 18px;
+    font-weight: 200px;
+  }
+
+  .funding-amount-value {
+    font-size: 34px;
+    font-weight: 500;
+    color: #8a8106;
+  }
+}
+
 .funding-table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.funding-table th, .funding-table td {
+.funding-table th,
+.funding-table td {
   padding: 12px 15px;
   text-align: center;
   border-bottom: 1px solid #e1e1e1;

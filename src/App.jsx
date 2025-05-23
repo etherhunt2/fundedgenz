@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Brands from './components/Brands';
@@ -15,29 +16,48 @@ import Footer from './components/Footer';
 import Preloader from './components/Preloader';
 import ScrollTop from './components/ScrollTop';
 import Testimonials from './components/Testimonials';
+import Signup from './pages/Signup';
+import Payment from './pages/Payment';
 
-function App() {
+// Home page component to organize all home sections
+const Home = () => {
+    return (
+        <>
+            <Hero />
+            <Features />
+            <TableSection />
+            <Comparison />
+            <Invest />
+            <Testimonials />
+        </>
+    );
+};
+
+function AppContent() {
+    const location = useLocation();
+    const hideHeaderFooter = location.pathname === '/payment';
     return (
         <>
             <Preloader />
             <ScrollTop />
-            <Header />
+            {!hideHeaderFooter && <Header />}
             <main className="main-area">
-                <Hero />
-                <Brands />
-                <Features />
-                <TableSection />
-                <Comparison />
-                {/* <Roadmap /> */}
-                <Invest />
-                {/* <Team /> */}
-                {/* <Partners /> */}
-                {/* <Events /> */}
-                <Testimonials />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/signup" element={<Signup />} />
+                    <Route path="/payment" element={<Payment />} />
+                </Routes>
             </main>
-            {/* <FAQ /> */}
-            <Footer />
+            {!hideHeaderFooter && <Footer />}
         </>
+    );
+}
+
+function App() {
+    return (
+        <Router>
+            <AppContent />
+        </Router>
     );
 }
 

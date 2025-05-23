@@ -18,7 +18,9 @@
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color: rgba(15, 16, 30, 0.9);
+  background-color: rgba(15, 16, 30, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   animation: fadeInDown 0.7s ease;
 }
@@ -238,14 +240,14 @@
     z-index: 1000;
     color: white;
   }
-  
+
   .menu-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
-  
+
   .logo img {
     max-height: 40px;
     width: auto;
@@ -313,7 +315,8 @@
   border-radius: 5px;
   font-weight: 600;
   transition: all 0.3s ease;
-  max-width: fit-content;
+  max-width: max-content;
+  margin-left: 130px;
 }
 
 .mobile-register .btn2:hover {
@@ -450,11 +453,11 @@
   .d-none {
     display: none !important;
   }
-  
+
   .header-action .list-wrap li:not(.header-login) {
     display: none;
   }
-  
+
   .mobile-menu .navigation li.mobile-register {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -467,8 +470,8 @@
     max-width: 100%;
     border-right: none !important;
   }
-  
+
   .mobile-menu .navigation li:nth-child(2) {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
-} 
+}

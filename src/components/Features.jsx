@@ -29,7 +29,7 @@ const Features = () => {
                         </div>
 
                         <div className="investment-progress">
-                            <img src="/works.png" alt="Features" className="alltuchtopdown" />
+                            <img src="/brand.png" alt="Features" className="alltuchtopdown" />
                             {/* <ul className="wcu-price-progress-wrap">
                                 <li>
                                     <h6 className="progress-wrap-title">Expected FOX price</h6>

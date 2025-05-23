@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { LuMoveUp } from "react-icons/lu";
 
 const ScrollTop = () => {
     const [visible, setVisible] = useState(false);
@@ -30,7 +31,7 @@ const ScrollTop = () => {
             onClick={scrollToTop}
             style={{ display: visible ? 'block' : 'none' }}
         >
-            <i className="fas fa-angle-up"></i>
+            <LuMoveUp size={20} />
         </button>
     );
 };

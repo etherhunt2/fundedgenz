@@ -26,23 +26,23 @@ const Testimonials = () => {
         {
             id: 1,
             text: "This platform completely transformed how I manage my crypto investments. The intuitive interface and real-time tracking have saved me countless hours. I've seen a 20% increase in returns since I started using it!",
-            name: "Sarah Johnson",
+            name: "Kinjal Mehta",
             company: "Tech Innovations Inc.",
-            image: "https://randomuser.me/api/portraits/women/1.jpg"
+            image: "kinjal.jpeg"
         },
         {
             id: 2,
             text: "I was struggling to find a platform that would support my trading journey, but FundedGenz gave me the opportunity to prove my skills without risking my own capital. The team's ongoing mentorship and expert training in crypto and forex have been invaluable. Thanks to them, I'm now seeing consistent returns!",
             name: "Amit Patil",
             company: "Forex Trader",
-            image: "https://randomuser.me/api/portraits/men/8.jpg"
+            image: "amit.jpeg"
         },
         {
             id: 3,
             text: "Joining FundedGenz was the best decision I made. The combination of a funded account, personalized coaching, and a transparent payout structure has been a game changer for me. It's empowering to trade with confidence knowing I have the resources and support to succeed.",
             name: "Bablu Mishra",
             company: "Crypto Trader",
-            image: "https://randomuser.me/api/portraits/men/9.jpg"
+            image: "bablu.jpeg"
         }
     ];
 

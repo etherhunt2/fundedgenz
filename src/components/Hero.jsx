@@ -95,9 +95,9 @@ const Hero = () => {
                             Free Forex Crypto Trading
 
                             Course</h2>
-                        <div className="hero-buttons">
-                            <a href="/shop/" className="btn btn2 show-arrow">Start Challenge</a>
-                            <a href="/blog/" className="btn show-arrow">Contact Us</a>
+                        <div className="hero-buttons gap-y-[10px]">
+                            <a href="#plan" className="btn btn2 show-arrow" style={{ zIndex: 1 }}>Start Challenge</a>
+                            <a href="#footer" className="btn show-arrow" style={{ zIndex: 1 }}>Contact Us</a>
                         </div>
                     </div>
 
@@ -116,44 +116,6 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-
-            {/* <div className="container">
-                <div className="ico-countdown-wrapper">
-                    <div className="ico-countdown-box">
-                        <h2>ICO will start in..</h2>
-
-                        <div className="hero-countdown-wrap">
-                            <ul className="skill-feature_list mt-0">
-                                <li><span>Value</span> of technology invested</li>
-                                <li><span>Private</span> sale</li>
-                                <li>
-                                    <h4>ICO</h4>
-                                </li>
-                            </ul>
-                            <div className="skill-feature">
-                                <div className="progress">
-                                    <div className="progress-bar"></div>
-                                </div>
-                                <div className="progress-value-max">100 Min $</div>
-                            </div>
-                            <ul className="skill-feature_list style2 mb-0">
-                                <li>7.75 Min</li>
-                                <li>1.5 Min</li>
-                                <li>140,000 $ chosen</li>
-                            </ul>
-                        </div>
-
-                        <div className="banner-countdown-wrap">
-                            <div className="coming-time">
-                                <div className="time-count day"><span>{countdownData.days}</span>Days</div>
-                                <div className="time-count hour"><span>{countdownData.hours}</span>Hours</div>
-                                <div className="time-count min"><span>{countdownData.minutes}</span>Minute</div>
-                                <div className="time-count sec"><span>{countdownData.seconds}</span>Second</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
         </div>
     );
 };
