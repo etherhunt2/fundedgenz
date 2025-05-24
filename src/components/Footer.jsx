@@ -34,18 +34,18 @@ const Footer = () => {
                             <h2 className="fw-title">Quick links</h2>
                             <ul className="list-wrap">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/signup">Partner</a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=919175388622">Partner</a></li>
                                 <li><a href="#compare">Comparison</a></li>
                                 <li><a href="#plan">Buy Plans</a></li>
                                 <li><a href="https://api.whatsapp.com/send?phone=919175388622">Contact Us</a></li>
-                                <li><a href="/signup">Affiliate Program</a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=919175388622">Affiliate Program</a></li>
                             </ul>
                         </div>
 
                         <div className="footer-widget footer-links">
                             <h2 className="fw-title">Resources</h2>
                             <ul className="list-wrap">
-                                <li><a href="/signup">Become Investor</a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=919175388622">Become Investor</a></li>
                                 <li><a href="https://api.whatsapp.com/send?phone=919175388622">Customer Support</a></li>
                                 <li><a href="https://api.whatsapp.com/send?phone=919175388622">Live Chat</a></li>
                                 <li><a href="https://api.whatsapp.com/send?phone=919175388622">Call Us</a></li>
@@ -58,15 +58,15 @@ const Footer = () => {
                             <h2 className="fw-title">Contact Us</h2>
                             <div className="contact-info">
                                 <div className="contact-item">
-                                    <a href="tel:+971501234567" className="d-flex align-items-center">
+                                    <a href="tel:+919175388622" className="d-flex align-items-center">
                                         <FaPhone className="me-2" />
-                                        <span>+971 50 123 4567</span>
+                                        <span>+91 91753 88622</span>
                                     </a>
                                 </div>
                                 <div className="contact-item">
                                     <a href="mailto:support@fundedgenz.com" className="d-flex align-items-center">
                                         <FaEnvelope className="me-2" />
-                                        <span>support@fundedgenz.com</span>
+                                        <span>fundedgenz@gmail.com</span>
                                     </a>
                                 </div>
                                 <div className="contact-item">

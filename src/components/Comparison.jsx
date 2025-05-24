@@ -40,7 +40,7 @@ const Comparison = () => {
                             </tbody>
                         </table>
                         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px', marginBottom: '20px' }}>
-                            <button className="funding-button">Get Funded Now</button>
+                            <a href='/signup' className="funding-button">Get Funded Now</a>
                         </div>
                     </div>
                 </div>

@@ -32,7 +32,6 @@ const TableSection = () => {
                             </button>
                             <button
                                 className={`pricing-button active`}
-                            // onClick={() => handleButtonClick(2)}
                             >
                                 Instant
                             </button>
@@ -42,14 +41,13 @@ const TableSection = () => {
                     <div className="pricing-buttons-container" style={{ marginTop: '20px', marginBottom: '20px' }}>
                         <div className="pricing-buttons">
                             <button
-                                className={`pricing-button active`}
-                            // onClick={() => handleButtonClick(3)}
+                                className={`pricing-button ${activeButton === 3 ? 'active' : ''}`}
+                                onClick={() => handleButtonClick(3)}
                             >
                                 $5,000
                             </button>
                             <button
-                                className={`pricing-button ${activeButton === 4 ? 'active' : ''}`}
-                                onClick={() => handleButtonClick(4)}
+                                className={`pricing-button active}`}
                             >
                                 $10,000
                             </button>
@@ -84,9 +82,9 @@ const TableSection = () => {
                         <div className="funding-header">
                             <div className="funding-amount">
                                 <span className="funding-amount-text">Account Size</span>
-                                <span className="funding-amount-value">$5,000</span>
+                                <span className="funding-amount-value">$10,000</span>
                             </div>
-                            <button className="funding-button">Get Funded Fee $35</button>
+                            <a href='/signup' className="funding-button">Get Funded Fee $59</a>
                         </div>
 
                         <table className="funding-table">
@@ -140,7 +138,7 @@ const TableSection = () => {
                             </tbody>
                         </table>
                         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px', marginBottom: '20px' }}>
-                            <button className="funding-button">Get Funded Fee $35</button>
+                            <a href='/signup' className="funding-button">Get Funded Fee $59</a>
                         </div>
                     </div>
                 </div>
